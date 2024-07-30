@@ -62,30 +62,6 @@ o	Checkout process
 •	Data Encryption: Use SSL/TLS for data in transit, and encrypt sensitive data in the database.
 •	Role-Based Access Control: Different access levels for Users, Restaurant Owners, Admins, and Delivery Partners.
 •	Compliance: Ensure compliance with local regulations, such as GDPR for data protection.
-________________________________________
-Once you're ready, we can proceed to the Low-Level Design (LLD), which will detail the specific class structures, database schema, detailed workflows, API specifications, and more. Let me know if you want to proceed with the LLD or have any questions about the HLD!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -414,8 +390,8 @@ Favorite Restaurants APIs:
 4.5. Search and Discovery Workflow:
 1.	Search: User enters search query -> Backend queries database -> Returns filtered and sorted results.
 2.	Recommendations: Based on user preferences -> Backend suggests restaurants and dishes.
-________________________________________
-This LLD provides a detailed view of the system's components, including class structures, database schema, API specifications, and workflows. Let me know if you need further details or specific aspects to be clarified or expanded upon!
+
+
 
 
 
@@ -527,7 +503,7 @@ o	Use JWT tokens for stateless authentication across services.
 6.	Monitoring and Logging:
 o	Implement centralized logging and monitoring using tools like ELK Stack, Prometheus, or Grafana.
 o	Ensure that each microservice provides health checks and metrics.
-Example Workflow: Order Placement
+Example Workflow: Order Placement	
 1.	User places an order via the Order Service.
 2.	Order Service validates the order, calculates totals, and sends the order details to the Payment Service.
 3.	Payment Service processes the payment and updates the order status.
