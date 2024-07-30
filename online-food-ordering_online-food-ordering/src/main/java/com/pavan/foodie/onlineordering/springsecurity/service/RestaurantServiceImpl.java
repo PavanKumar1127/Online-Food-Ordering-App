@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.pavan.foodie.onlineordering.entity.user.Address;
 import com.pavan.foodie.onlineordering.entity.user.RestaurantDTO;
@@ -14,13 +15,14 @@ import com.pavan.foodie.onlineordering.repository.RestaurantRepository;
 import com.pavan.foodie.onlineordering.repository.UserRepository;
 import com.pavan.foodie.onlineordering.request.CreateRestaurantRequest;
 
+@Service
 public class RestaurantServiceImpl implements RestaurantService {
 
 	@Autowired
 	private RestaurantRepository restaurantRepository;
 
-	@Autowired
-	private AddressRepository addressRepository;
+//	@Autowired
+//	private AddressRepository addressRepository;
 
 	@Autowired
 	private UserRepository userRepository;
@@ -31,11 +33,11 @@ public class RestaurantServiceImpl implements RestaurantService {
 	@Override
 	public RestaurantDTO createRestaurant(CreateRestaurantRequest req, UserEntity user) {
 
-		Address address = addressRepository.save(req.getAddress());
+		//Address address = addressRepository.save(req.getAddress());
 
 		RestaurantDTO restaurant = new RestaurantDTO();
 
-		restaurant.setAddress(address);
+//		restaurant.setAddress(address);
 
 		restaurant.setContactInformation(req.getContactInformation());
 

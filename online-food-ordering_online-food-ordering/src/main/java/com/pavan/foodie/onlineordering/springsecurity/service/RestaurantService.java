@@ -4,8 +4,11 @@ import com.pavan.foodie.onlineordering.request.CreateRestaurantRequest;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.pavan.foodie.onlineordering.entity.user.RestaurantDTO;
 import com.pavan.foodie.onlineordering.entity.user.UserEntity;
+
 
 public interface RestaurantService {
 

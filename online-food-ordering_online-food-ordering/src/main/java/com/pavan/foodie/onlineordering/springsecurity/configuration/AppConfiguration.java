@@ -48,7 +48,7 @@ public class AppConfiguration {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
         
-        config.setAllowedOrigins(Arrays.asList("https://foodie.vercel.app", "http://localhost:3000"));
+        config.setAllowedOrigins(Arrays.asList("https://foodie.vercel.app", "http://localhost:8080"));
         config.setAllowedMethods(Collections.singletonList("*"));
         config.setAllowCredentials(true);
         config.setAllowedHeaders(Collections.singletonList("*"));

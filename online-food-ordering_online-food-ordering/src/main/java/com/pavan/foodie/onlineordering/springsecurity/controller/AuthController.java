@@ -117,7 +117,7 @@ public class AuthController {
             throw new BadCredentialsException("Invalid username...");
         }
 
-        if (!passwordEncoder.matches(password, userDetails.getPassword())) {
+        if (passwordEncoder.matches(password, userDetails.getPassword())) {
             throw new BadCredentialsException("Invalid password...");
         }
 
